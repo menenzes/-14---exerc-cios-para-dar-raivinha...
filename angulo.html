@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+
+	
+  </head>
+  <body>
+
+    <script type="text/javascript">
+		var a1
+		var a2
+		var a3
+		var soma
+		
+
+		alert("Vamos ver qual o tipo do seu triângulo com base nos ângulos dele");
+		alert("Lembrando que a soma dos ângulos tem que dar 180°");
+
+
+		a1 = prompt("Qual é o primeiro ângulo?")
+		a1 = parseInt(a1)
+
+		a2 = prompt("E o segundo ângulo?")
+		a2 = parseInt(a2)
+
+		a3 = prompt("Agora o terceiro")
+		a3 = parseInt(a3)
+            
+        soma = a1+a2+a3
+		
+		if (soma == 180){
+
+		
+		if(a1 < 90 && a2<90 && a3<90)
+		{
+			alert("Seu triângulo é acutângulo (Os ângulos são menores que 90°)")
+		}
+
+		if(a1 == 90 || a2 == 90 || a3 == 90)
+		{
+			alert("Seu triângulo é retângulo (Ele tem pelo menos um ângulo reto)")
+		}
+
+		if(a1 > 90 || a2 > 90 || a3 > 90)
+		{
+			alert("Seu triângulo é obtusângulo (Tem pelo menos um ângulo maior que 90°)")
+		}
+	}
+
+	if(soma > 180 || soma < 180)
+	{
+		alert("A soma dos ângulos não deu 180, ou passou disso")
+	}
+    </script>  
+  
+  </body>
+</html>
